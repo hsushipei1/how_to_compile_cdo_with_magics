@@ -1,4 +1,3 @@
-I will apologize in advance for my poor English and hope you can understand the whole article.
 # Overview
 CDO([Climate Data Operator](https://code.zmaw.de/projects/cdo)) is a software that has many  command line tools to manipulate and analysis climate data and NWP model data. Building cdo with [Magics](https://software.ecmwf.int/wiki/display/MAGP/Magics) enables it to [produce plots](https://code.zmaw.de/projects/cdo/wiki/Tutorial#Plotting).<br/>
 This article shows how to build cdo with NetCDF, GRIB, HDF5, and Magics from source code. You can install cdo via package managers(like apt, yum, etc). (I'm not sure which third party libraries are included.)
@@ -27,7 +26,7 @@ This article shows how to build cdo with NetCDF, GRIB, HDF5, and Magics from sou
 
 
 # Preparation
-##### * Check compilers: c,  c++ and GNU make
+### * Check compilers: c,  c++ and GNU make
 ```bash
 cc --version
 ```
@@ -40,7 +39,7 @@ make --version
 If any output of the above command shows `command not found`, be sure to install them.
 <br> </br>
 
-##### * Prepariebuilding environment
+### * Prepare building environment
 For example, I want to install all of the packages under 
 >/home/hsushipei/software/
 
@@ -57,7 +56,7 @@ mkdir $INSTALL_ROOT/src_bundle $INSTALL_ROOT/build
 * For software itself: you can specify location to `--prefix` following `./configure`. To keep simple, I choose to install at  `$INSTALL_ROOT`
 <br> </br>
 
-##### * Make things easier: Using Conda
+### * Make things easier: Using Conda
 I strongly recommend installing [conda](http://conda.pydata.org/docs/), a package and development enviorment manager for python. Conda helps you quickly and easly install some of the packages.<br/>
 Download [miniconda](http://conda.pydata.org/miniconda.html) for __x86_64 linux system__.
 ```bash
@@ -265,7 +264,11 @@ make && make install
 <br></br>
 
 # Verify CDO Installation
-Now you can verify whether external support from third party libraries is correctly linked to cdo. To check, try command
+Now, Adding cdo to PATH and re-login allows you launch cdo from shell
+```bash
+export PATH=/home/hsushipei/software/bin:${PATH}
+```
+You can verify whether external support from third party libraries is correctly linked to cdo. To check, try command
 ```bash
 cdo -V
 ```
@@ -273,11 +276,6 @@ The output shows
 Also, you can try some cdo command to see if cdo works well
 ```bash
 cdo shaded olr.nc plot_olr
-```
-***Add cdo to PATH**
-Add cdo to PATH allow you launch cdo from shell
-```bash
-export PATH=/home/hsushipei/software/bin:${PATH}
 ```
 <br></br>
 
