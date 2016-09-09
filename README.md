@@ -24,6 +24,38 @@ This article shows how to build cdo with NetCDF, GRIB, HDF5, and Magics from sou
 
 
 # Start building
+### Before starting up
+##### * Checking compilers: c,  c++ and GNU make
+```bash
+cc --version
+```
+```bash
+g++ --version
+```
+```bash
+make --version
+```
+<br> </br>
+
+##### * Preparing building environment
+For example, I want to install all of the packages under 
+```bash
+/home/hsushipei/software/
+```
+To make future commands shorter
+```bash
+export INSTALL_ROOT=/home/hsushipei/software/
+```
+Create directories for source code bundle and building
+```bash
+mkdir $INSTALL_ROOT/src_bundle $INSTALL_ROOT/build
+```
+<br> </br>
+
+##### * Make things easier: Using Conda
+I strongly recommend installing [conda](http://conda.pydata.org/docs/), a package and development enviorment manager for python. Conda helps you quickly and easly install some of the packages.
+```bash
+```
 
 # Troubleshooting
 
