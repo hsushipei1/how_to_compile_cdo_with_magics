@@ -22,9 +22,7 @@ This article shows how to build cdo with NetCDF, GRIB, HDF5, and Magics from sou
    * GRIB-api (1.17.0)
 
 
-
-# Start building
-### Before starting up
+# Preparation
 ##### * Checking compilers: c,  c++ and GNU make
 ```bash
 cc --version
@@ -39,9 +37,8 @@ make --version
 
 ##### * Preparing building environment
 For example, I want to install all of the packages under 
-```bash
-/home/hsushipei/software/
-```
+>/home/hsushipei/software/
+
 To make future commands shorter
 ```bash
 export INSTALL_ROOT=/home/hsushipei/software/
@@ -53,9 +50,34 @@ mkdir $INSTALL_ROOT/src_bundle $INSTALL_ROOT/build
 <br> </br>
 
 ##### * Make things easier: Using Conda
-I strongly recommend installing [conda](http://conda.pydata.org/docs/), a package and development enviorment manager for python. Conda helps you quickly and easly install some of the packages.
+I strongly recommend installing [conda](http://conda.pydata.org/docs/), a package and development enviorment manager for python. Conda helps you quickly and easly install some of the packages.<br/>
+Download [miniconda](http://conda.pydata.org/miniconda.html) for __x86_64 linux system__.
 ```bash
+wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh -P $INSTALL_ROOT/src_bundle
 ```
+To install conda,
+```bash
+cd $INSTALL_ROOT/src_bundle && bash Miniconda2-latest-Linux-x86_64.sh
+```
+After you approve the license terms of, let conda be installed in default location, i.e.
+>/home/hsushipei/miniconda2
+
+and let installer to prepend the miniconda2 install location to PATH.
+Re-login and check for conda installation
+```bash
+which conda
+```
+and the output should be
+
+>~/miniconda2/bin/conda
+
+Make future commands shorter
+```bash
+export CONDA_ROOT=/home/hsushipei/miniconda2/
+```
+
+# Start building
+
 
 # Troubleshooting
 
