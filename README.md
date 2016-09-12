@@ -122,19 +122,19 @@ Now, take a breath and let's start!
  ```bash
  make all install
  ```
- * [libcurl](https://curl.haxx.se/) (7.40.0)
+ * [libcurl](https://curl.haxx.se/) (7.40.0)<br/>
  Download version 7.40.0
  ```bash
  wget http://curl.haxx.se/download/curl-7.40.0.tar.gz
  ```
-```bash
-./configure --prefix=$INSTALL_ROOT --with-zlib=$INSTALL_ROOT --with-pic
-```
-```bash
-make all install
-```
+ ```bash
+ ./configure --prefix=$INSTALL_ROOT --with-zlib=$INSTALL_ROOT --with-pic
+ ```
+ ```bash
+ make all install
+ ```
 
- If dependencies of NetCDF are successfully built, let's build NetCDF-4.3.3.1
+ If dependencies of NetCDF are successfully built, let's build NetCDF-4.3.3.1<br/>
 Download NetCDF version 4.3.3.1.
 ```bash
 wget https://github.com/Unidata/netcdf-c/archive/v4.3.3.1.tar.gz
@@ -149,7 +149,7 @@ make all install
 <br></br>
 
 * [GRIB_api](https://software.ecmwf.int/wiki/display/GRIB/Home) (1.17.0)
- * [Jasper](http://www.ece.uvic.ca/~frodo/jasper/) (1.900.1)
+ * [Jasper](http://www.ece.uvic.ca/~frodo/jasper/) (1.900.1)<br/>
  Download version 1.900.1
  ```bash
  ./configure CFLAGS=-fPIC –prefix=$INSTALL_ROOT
@@ -158,7 +158,7 @@ make all install
  make all install
  ```
  
- For GRIB_api, click [here](https://software.ecmwf.int/wiki/display/GRIB/Releases) and download version 1.17.0
+For GRIB_api, click [here](https://software.ecmwf.int/wiki/display/GRIB/Releases) and download version 1.17.0
 ```bash
 ./configure CFLAGS=-fPIC --prefix=$INSTALL_ROOT --with-netcdf=$INSTALL_ROOT --with-jasper=$INSTALL_ROOT --disable-jpeg
 ```
@@ -167,11 +167,11 @@ make && make install
 ```
 <br></br>
 
-* HDF5 (1.8.17)
+* HDF5 (1.8.17)<br/>
 See instruction above
 <br></br>
 
-* [PROJ.4](http://trac.osgeo.org/proj/) (4.8.0)
+* [PROJ.4](http://trac.osgeo.org/proj/) (4.8.0)<br/>
 Download version 4.8.0
 ```bash
 wget http://download.osgeo.org/proj/proj-4.8.0.tar.gz
