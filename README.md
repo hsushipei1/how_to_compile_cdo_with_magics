@@ -281,7 +281,7 @@ cdo shaded olr.nc plot_olr
 <br></br>
 
 # Troubleshooting
-* __NetCDF__ and NetCDF-c++<br/>
+* __NetCDF and NetCDF-c++__<br/>
 If you got error message like
 > “configure: error: Can't find or link to the hdf5 library. Use --disable-netcdf-4, or see config.log for errors.”
 
