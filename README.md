@@ -90,28 +90,28 @@ Notice that if a certain software is required by at least two or more softwares,
 Now, take a breath and let's start!
 
 * [NetCDF](http://www.unidata.ucar.edu/software/netcdf/) (4.3.3.1)
- * [zlib](http://www.zlib.net/) (1.2.8)
-Download version 1.2.8.
-```bash
- wget http://zlib.net/zlib-1.2.8.tar.gz 
- ```
- Extract zlib from source code bundle and build it.
+ * [zlib](http://www.zlib.net/) (1.2.8)<br/>
+ Download version 1.2.8.
  ```bash
-./configure --prefix=$INSTALL_ROOT
- ```
- ```bash
- make all install
- ```
+  wget http://zlib.net/zlib-1.2.8.tar.gz 
+  ```
+  Extract zlib from source code bundle and build it.
+  ```bash
+ ./configure --prefix=$INSTALL_ROOT
+  ```
+  ```bash
+  make all install
+  ```
  
- * [szlib](https://www.hdfgroup.org/HDF5/release/obtain5.html) (2.1)
+ * [szlib](https://www.hdfgroup.org/HDF5/release/obtain5.html) (2.1)<br/>
  To download, click on "External Libraries Used by HDF5" and click "SZIP Source Code".
-```bash
-./configure --prefix=$INSTALL_ROOT
- ```
  ```bash
- make all install
- ```
- * [HDF5](https://www.hdfgroup.org/HDF5/release/obtain5.html) (2.8.17)
+ ./configure --prefix=$INSTALL_ROOT
+  ```
+  ```bash
+  make all install
+  ```
+ * [HDF5](https://www.hdfgroup.org/HDF5/release/obtain5.html) (2.8.17) <br/>
  Download version 2.8.17
  ```bash
  wget http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.17.tar.gz
