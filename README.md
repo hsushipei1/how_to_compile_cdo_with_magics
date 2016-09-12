@@ -185,12 +185,12 @@ make && make install
 <br></br>
 
 * [Magics](https://software.ecmwf.int/wiki/display/MAGP/Magics) (2.18.15)
- * python (2.7.x)
+ * python (2.7.x)<br/>
  Python is a built-in software in linux. Its version should be at least 2.7
  ```bash
  python --version
  ```
- * [swig](http://www.swig.org/index.php) (3.0.10)
+ * [swig](http://www.swig.org/index.php) (3.0.10)<br/>
  Swig can be installed by conda with one command.
  ```bash
  conda install swig
@@ -200,29 +200,29 @@ make && make install
  conda install numpy
  ```
  * [pango](http://www.pango.org/) (1.39.0)
-```bash
-conda install pango
-```
- * NetCDF-C++ (4.2.1)
+ ```bash
+ conda install pango
+ ```
+ * [NetCDF-C++](https://www.unidata.ucar.edu/downloads/netcdf/netcdf-cxx/index.jsp) (4.2.1)<br/>
  Download version 4.2.1
-```bash
-https://github.com/Unidata/netcdf-cxx4/archive/v4.2.1.tar.gz
-```
-Build NetCDF-c++
-```bash
-./configure --with-hdf5=$INSTALL_ROOT --with-zlib=$INSTALL_ROOT --with-szlib=$INSTALL_ROOT --prefix=/usr/local --enable-netcdf-4
-```
-```bash
-make && make install
-```
- * [boost](http://www.boost.org/) (1.61.0)
- Click [here](https://sourceforge.net/projects/boost/files/boost/1.61.0/) and download boost version 1.61.0
  ```bash
- ./bootstrap.sh --with-python=$CONDA_ROOT/bin/python --prefix=$INSTALL_ROOT
+ https://github.com/Unidata/netcdf-cxx4/archive/v4.2.1.tar.gz
+ ```
+ Build NetCDF-c++
+ ```bash
+ ./configure --with-hdf5=$INSTALL_ROOT --with-zlib=$INSTALL_ROOT --with-szlib=$INSTALL_ROOT --prefix=/usr/local --enable-netcdf-4
  ```
  ```bash
- ./b2 --prefix=$INSTALL_ROOT install
+ make && make install
  ```
+  * [boost](http://www.boost.org/) (1.61.0)
+  Click [here](https://sourceforge.net/projects/boost/files/boost/1.61.0/) and download boost version 1.61.0
+  ```bash
+  ./bootstrap.sh --with-python=$CONDA_ROOT/bin/python --prefix=$INSTALL_ROOT
+  ```
+  ```bash
+  ./b2 --prefix=$INSTALL_ROOT install
+  ```
  * [libgd](https://libgd.github.io/) (2.2.3)
  Download version 2.2.3
  ```bash
@@ -237,7 +237,7 @@ make && make install
  * GRIB-api (1.17.0)
 See instruction above
 
- If all dependencies are built, build magics,<br/>
+If all dependencies are built, build magics,<br/>
 From [here](https://software.ecmwf.int/wiki/display/MAGP/Releases), download magics version 2.18.15
 Set environmental variable
 ```bash
