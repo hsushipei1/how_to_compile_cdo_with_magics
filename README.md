@@ -215,7 +215,7 @@ make && make install
  ```bash
  make && make install
  ```
-  * [boost](http://www.boost.org/) (1.61.0)
+  * [boost](http://www.boost.org/) (1.61.0)<br/>
   Click [here](https://sourceforge.net/projects/boost/files/boost/1.61.0/) and download boost version 1.61.0
   ```bash
   ./bootstrap.sh --with-python=$CONDA_ROOT/bin/python --prefix=$INSTALL_ROOT
@@ -223,7 +223,7 @@ make && make install
   ```bash
   ./b2 --prefix=$INSTALL_ROOT install
   ```
- * [libgd](https://libgd.github.io/) (2.2.3)
+ * [libgd](https://libgd.github.io/) (2.2.3)<br/>
  Download version 2.2.3
  ```bash
  wget https://github.com/libgd/libgd/archive/gd-2.2.3.tar.gz
@@ -237,7 +237,7 @@ make && make install
  * GRIB-api (1.17.0)
 See instruction above
 
-If all dependencies are built, build magics,<br/>
+If all dependencies are built, build magics.<br/>
 From [here](https://software.ecmwf.int/wiki/display/MAGP/Releases), download magics version 2.18.15
 Set environmental variable
 ```bash
@@ -249,6 +249,7 @@ export LDFLAGS=-L$INSTALL_ROOT/lib/
 ```bash
 make && make install
 ```
+<br></br>
 
 Finally, we can build cdo now
 Download cdo version 1.7.2
@@ -280,7 +281,7 @@ cdo shaded olr.nc plot_olr
 <br></br>
 
 # Troubleshooting
-* NetCDF and NetCDF-c++
+* __NetCDF__ and NetCDF-c++<br/>
 If you got error message like
 > “configure: error: Can't find or link to the hdf5 library. Use --disable-netcdf-4, or see config.log for errors.”
 
@@ -292,7 +293,7 @@ export CPPFLAGS=-I$INSTALL_ROOT/include/
 and try `./configure` again
 <br></br>
 
-* magics
+* __magics__<br/>
 1.If you got error message like
 >Can't locate XML/Parser.pm in @INC (you may need to install the XML::Parser module) (@INC contains: /home/hsushipei/software/lib/perl5/site_perl/5.24.0/x86_64-linux /home/hsushipei/software/lib/perl5/site_perl/5.24.0 /home/hsushipei/software/lib/perl5/5.24.0/x86_64-linux /home/hsushipei/software/lib/perl5/5.24.0 .) at ../../tools/xml2cc_new.pl line 3.
 BEGIN failed--compilation aborted at ../../tools/xml2cc_new.pl line 3.
